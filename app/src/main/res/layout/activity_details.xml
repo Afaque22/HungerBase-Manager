@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailsActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:hint="Owner Name"
+                app:counterEnabled="true"
+                app:counterMaxLength="20"
+                app:endIconMode="clear_text"
+                app:helperTextTextColor="#FF0303"
+                app:startIconDrawable="@drawable/person_24"
+                app:startIconTint="@color/modeBW">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etName"
+                    android:textColor="@color/modeBW"
+                    android:inputType="text"
+                    android:maxLength="20"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:hint="Restraunt Name"
+                app:counterEnabled="true"
+                app:counterMaxLength="30"
+                app:endIconMode="clear_text"
+                app:helperTextTextColor="#FF0303"
+                app:startIconDrawable="@drawable/restaurant_24"
+                app:startIconTint="@color/modeBW">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etResName"
+                    android:textColor="@color/modeBW"
+                    android:inputType="text"
+                    android:maxLength="30"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:hint="Phone Number"
+                app:counterEnabled="true"
+                app:counterMaxLength="13"
+                app:endIconMode="clear_text"
+                app:helperTextTextColor="#FF0303"
+                app:startIconDrawable="@drawable/phone_24"
+                app:startIconTint="@color/modeBW">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etPhone"
+                    android:inputType="number"
+                    android:textColor="@color/modeBW"
+                    android:maxLength="13"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_alignParentStart="true"
+                    android:hint="Select Province"
+                    android:minEms="9"
+                    android:maxEms="9"
+                    app:startIconDrawable="@drawable/ic_baseline_add_location_24"
+                    app:startIconTint="@color/modeBW">
+
+                    <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/etProvince"
+                        android:textColor="@color/modeBW"/>
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="32dp"
+                    android:minEms="9"
+                    android:maxEms="9"
+                    app:startIconDrawable="@drawable/location_city_24"
+                    android:hint="Select City"
+                    app:startIconTint="@color/modeBW">
+
+                    <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/etCity"
+                        android:textColor="@color/modeBW"/>
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </RelativeLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:hint="Address &amp; Nearby Landmark"
+                app:counterEnabled="true"
+                app:counterMaxLength="50"
+                android:layout_marginTop="20dp"
+                app:endIconMode="clear_text"
+                app:helperTextTextColor="#FF0303"
+                app:startIconDrawable="@drawable/my_location_24"
+                app:startIconTint="@color/modeBW">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLength="50"
+                    android:inputType="text"
+                    android:id="@+id/etAddress"
+                    android:textColor="@color/modeBW"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginTop="10dp"
+                android:text="Save" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/dprogressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:visibility="invisible"/>
+
+</RelativeLayout>

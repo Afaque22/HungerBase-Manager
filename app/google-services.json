@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "951185947116",
+    "firebase_url": "https://hungerbase-default-rtdb.firebaseio.com",
+    "project_id": "hungerbase",
+    "storage_bucket": "hungerbase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:951185947116:android:1227da1d166f5fa172e8c9",
+        "android_client_info": {
+          "package_name": "com.example.hungerbase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "951185947116-qqe8t5q1pv8mjmarslr6rlgod67nqtu1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKzlnaWrSqMAot8qaa8qwB4Z489-GTpQw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "951185947116-qqe8t5q1pv8mjmarslr6rlgod67nqtu1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:951185947116:android:86fdc41efd96d7f172e8c9",
+        "android_client_info": {
+          "package_name": "com.example.hungerbasemanager"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "951185947116-qqe8t5q1pv8mjmarslr6rlgod67nqtu1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKzlnaWrSqMAot8qaa8qwB4Z489-GTpQw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "951185947116-qqe8t5q1pv8mjmarslr6rlgod67nqtu1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

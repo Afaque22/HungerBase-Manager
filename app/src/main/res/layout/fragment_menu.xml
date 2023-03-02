@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:focusable="true"
+    android:clickable="true"
+    tools:context=".Fragments.MenuFragment">
+
+    <ImageView
+        android:id="@+id/itemImg"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@color/modeLight"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="15dp"
+        android:hint="Name"
+        android:layout_toEndOf="@id/itemImg"
+        android:id="@+id/layName">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/itemName"
+            android:textColor="@color/modeBW"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/itemImg"
+        android:hint="Description"
+        android:layout_marginEnd="15dp"
+        android:id="@+id/layDesc">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/itemDesc"
+            android:textColor="@color/modeBW"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:hint="Price"
+        android:layout_marginTop="10dp"
+        app:startIconDrawable="@drawable/money_24"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/layDesc"
+        android:id="@+id/layPrice">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/itemPrice"
+            android:textColor="@color/modeBW"/>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/itemAddBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layDesc"
+        android:layout_marginTop="15dp"
+        android:text="Add"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="15dp"/>
+
+    <TextView
+        android:id="@+id/txtmyMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Menu"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="30dp"
+        android:textColor="@color/purple_500"
+        android:layout_below="@id/layPrice"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/txtmyMenu"
+        android:id="@+id/menuRecycler"/>
+
+
+</RelativeLayout>
